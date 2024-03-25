@@ -10,7 +10,6 @@
   "author": "Shemet Max",
   "license": "ISC",
   "dependencies": {
-    "msh_generate_pw": "^1.0.1",
-    "uuid": "^9.0.1"
+    "msh_generate_pw": "^1.0.1"
   }
 }
