@@ -20,14 +20,14 @@ const aboutPage = `<a href="/">Главная</a>
 
 app.get('/', (req, res) => {
     res.sendFile(pathHome);
-    counter.home = ++counter.home;
+    counter.home += 1;
     fs.writeFileSync(pathJson, JSON.stringify(counter, null, 2));
     res.send(`${homePage}<p>Количество просмотров: ${counter.home}</p>`)
 });
 
 app.get('/about', (req, res) => {
     res.sendFile(pathAbout);
-    counter.about = ++counter.about;
+    counter.about += 1;
     fs.writeFileSync(pathJson, JSON.stringify(counter, null, 2));
     res.send(`${aboutPage}<p>Количество просмотров: ${counter.about}</p>`);
 });
