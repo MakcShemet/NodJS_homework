@@ -10,8 +10,6 @@ const pathAbout = path.join(__dirname, '/public/about.html');
 
 const counter = JSON.parse(fs.readFileSync(pathJson, 'utf-8'));
 
-console.log(counter);
-
 const homePage = `<a href="/">Главная</a>
 <a href="/about">О компании</a>
 <h1>Корневая страница</h1>`;
@@ -23,7 +21,6 @@ const aboutPage = `<a href="/">Главная</a>
 app.get('/', (req, res) => {
     res.sendFile(pathHome);
     counter.home = ++counter.home;
-    console.log(counter.home);
     fs.writeFileSync(pathJson, JSON.stringify(counter, null, 2));
     res.send(`${homePage}<p>Количество просмотров: ${counter.home}</p>`)
 });
