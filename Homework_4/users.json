@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maks",
+      "age": 26,
+      "phone": "12345678912",
+      "email": "maks@maks.com"
+    },
+    {
+      "id": 2,
+      "name": "Ivan",
+      "age": 28,
+      "phone": "+1234567890",
+      "email": "ivan@iv.com"
+    },
+    {
+      "id": 3,
+      "name": "Ivan",
+      "age": 28,
+      "phone": "+1234567890",
+      "email": "ivan@iv.com"
+    }
+  ]
+}
